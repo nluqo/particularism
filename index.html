@@ -1,0 +1,64 @@
+<html>
+<head>
+	<script src="m.js"></script>
+	<style>
+		#c, #a{
+			width: 960px;
+			height: 544px;
+		}
+
+		#a{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -480px;
+			margin-top: -256px;
+		}
+
+		#b, #d{
+			position: absolute;
+			top: 5px;
+			left: 300px;
+			display: none;
+		}
+		html, body{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+			background-color: black;
+			color: white;
+			font-family: Helvetica, Arial;
+		}
+
+		input, button, html{
+			font-size:20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="a">
+		<canvas id="c" width="960px" height="544px"></canvas>
+		<div id="b">
+			Name<br><input id="n" type="text" value="Ava" maxlength=20><br><br>
+			Gender<br>
+				F<input class="g" name="g" type="radio" value=1 checked><br>
+				M<input class="g" name="g" type="radio" value=0><br><br>
+			Spouse<br>
+				F<input class="p" name="p" type="radio" value=1 checked><br>
+				M<input class="p" name="p" type="radio" value=0><br><br>
+			<button onclick="s()">Continue</button>
+		</div>
+		<div id="d">
+			<h3>-Match 3+ to remove tiles.</h3>
+			<h3>-Match 4+ to send junk to your opponent (only 3 matches won't help).</h3>
+			<h3>-Chain together matches to send a lot more junk.</h3>
+			<h1>Controls:</h1>
+				Move: WASD/arrows<br>
+				Swap: SPACE<br>
+				Advance: E<br>
+		</div>
+	</div>
+</body>
+</html>
